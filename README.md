@@ -1,9 +1,3 @@
-# Btc::Exchange::Info
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/btc/exchange/info`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +16,29 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Currently only part of the exchange is supported
+
+### China
+
+1. Yunbi
+1. Okcoin
+1. Btctrade
+1. Taiwan
+
+### Bitoex
+1. Maicoin
+
+If you want to get buying info now form Maicoin
+
+BtcExchangeInfo::Maicoin.btc("buy")
+also you can get selling info now form Yunbi
+
+BtcExchangeInfo::Yunbi.btc("sell")
+You will get it float like 91073.88
+
+Get website url of exchange
+
+BtcExchangeInfo::Btctrade.url
 
 ## Development
 
@@ -37,7 +53,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Btc::Exchange::Info project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/btc-exchange-info/blob/master/CODE_OF_CONDUCT.md).

@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe Btc::Exchange::Info do
+RSpec.describe BtcExchangeInfo do
   it "has a version number" do
     expect(Btc::Exchange::Info::VERSION).not_to be nil
   end
