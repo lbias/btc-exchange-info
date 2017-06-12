@@ -5,6 +5,7 @@ module BtcExchangeInfo
   autoload :Yunbi, 'btc_exchange_info/yunbi'
   autoload :Maicoin, 'btc_exchange_info/maicoin'
   autoload :Bitoex, 'btc_exchange_info/bitoex'
+  autoload :Okcoin, 'btc_exchange_info/okcoin'
 
   def self.root
     File.expand_path('../..', __FILE__)
